@@ -52,6 +52,19 @@ can run the KreMLin test suite by doing `make test`.
 
 File a bug if things don't work!
 
+### Arch Linux
+
+KreMLin is available in the [Arch User Repository](https://aur.archlinux.org/packages/kremlin/).
+You can install it with an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers#Active) like [`yay`](https://aur.archlinux.org/packages/yay/):
+
+```bash
+sudo pacman -S opam
+yes ''|opam init
+yay -S z3-git kremlin --noconfirm
+```
+
+The installation may take a while (~50 minutes from scratch).
+
 ## Documentation
 
 The `--help` flag contains a substantial amount of information.
